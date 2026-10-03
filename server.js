@@ -88,7 +88,7 @@ app.post('/api/register', async (req, res) => {
 
         userDatabase.push(newUser);
 
-        return.status(201).json({ message: 'User registered successfully.' });
+        return res.status(201).json({ message: 'User registered successfully.' });
 
     } catch (error) {
         console.error('Registration Error:', error);
@@ -156,4 +156,4 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`[Server Status] Running securely on http://localhost:${PORT}`);
 });
-         
+        
