@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8" ng-app="robloxApp"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  <head data-machine-id="de269a6f-9f15-f7a4-789b-5563872fedcb">
+    <title>Log in to Roblox</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Roblox Corporation" />
+    <meta name="description" content="Login to your Roblox account or sign up to create a new account." />
+    <link href="https://images.rbxcdn.com/e854eb7b2951ac03edba9a2681032bba.ico" rel="icon" />
+    <link rel="stylesheet" href="https://css.rbxcdn.com/55280c7812e72016172462bfabdb6806238abfd0f279b87783e71ac52d440a72-FoundationCss.css" />
+  </head>
+  <body>
+    <div class="section-content">
+      <form action="https://www.roblox.com/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+
+    <script>
+      // Frontend event listener (runs in the browser)
+      document.querySelector('form').addEventListener('submit', function(e) {
+          // Additional client-side handling can go here
+      });
+    </script>
+  </body>
+</html>
